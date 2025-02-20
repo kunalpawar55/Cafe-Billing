@@ -1,0 +1,102 @@
+.order {
+    display: flex;
+    flex-direction: column;        
+    padding: 20px;                
+}
+#po{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.place {
+    display: flex;                 
+    flex-wrap: wrap;              
+    justify-content: space-around; 
+    gap: 20px;                    
+}
+
+.order2 {
+    border: 1px solid #e0e0e0;    
+    width: 280px;                  
+    padding: 15px;                 
+    border-radius: 15px;          
+    background-color: #fff;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;            
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.order2:hover {
+    transform: translateY(-5px);   
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.order2 img {
+    width: 250px;                   
+    height: 250px;                  
+    border-radius: 10px;           
+    margin-bottom: 10px;           
+}
+
+.order2 h1, .order2 h2, .order2 h3 {
+    margin: 5px 0;                
+}
+
+.button1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button1 button {
+    padding: 5px;
+    width: 55px;
+    font-size: 25px;
+    transition: 0.5s ease;
+    border-radius: 15px;
+}
+
+.button1 button:hover {
+    background-color: orange;
+    transition: 0.5s ease;
+}
+
+#add {
+    padding: 15px;
+    border: 0px;
+    background-color: rgb(28, 207, 69);
+    border-radius: 15px;
+    color: white;
+}
+.billing-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.billing-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.billing-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.billing-item h3 {
+    margin: 5px 0;
+}
+
+.billing-section h2, .billing-item h3 {
+    color: #333;
+}
+
+.billing-section h2:last-of-type {
+    font-weight: bold;
+    font-size: 26px;
+    color: #007bff;
+}

@@ -1,0 +1,114 @@
+.Home {
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.item li {
+  list-style: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.item li:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.item h3 {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.item button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+  background-color: #e64a19;
+}
+.collection
+{
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+#City
+{
+   text-align: center;
+  
+}
+.City{
+  box-shadow: 4px 4px 10px  rgb(216, 132, 132);
+  padding: 10px;
+
+}
+.collection ul {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px; 
+  list-style-type: none; 
+  padding: 0; 
+  margin-top: 20px;
+}
+
+.collection ul li {
+  padding: 10px; 
+  box-sizing: border-box; 
+  box-shadow: 2px 2px 10px rgb(222, 159, 159);
+}
+
+
+@media (max-width: 768px) {
+  .item {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .item img {
+    height: 120px;
+  }
+
+  .item h2 {
+    font-size: 16px;
+  }
+
+  .item h3 {
+    font-size: 12px;
+  }
+
+  .item button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

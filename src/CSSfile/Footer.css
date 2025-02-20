@@ -1,0 +1,65 @@
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 5px solid #ecf0f1;
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+}
+  
+  .footer img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .footer h1 {
+    font-size: 26px;
+    color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .linksfooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+  }
+  
+  .linksfooter ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .linksfooter li {
+    font-size: 16px;
+  }
+  
+  .linksfooter a {
+    color: #bdc3c7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+  }
+  
+  .linksfooter a:hover {
+    color: #ecf0f1;
+    border-bottom: 2px solid #f39c12;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .linksfooter ul {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  }
+  
