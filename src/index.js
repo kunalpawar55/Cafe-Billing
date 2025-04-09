@@ -12,6 +12,9 @@ import Signup from './Signup';
 import Cart from './Cart';
 import Contactus from './Contactus';
 import About from './About';
+import Add_Hotel from '../src/Admin/Add_Hotel'
+import PrivateRoute from './PrivateRoute';
+import Privaterouteradmin from './Privaterousteradmin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let rout=createBrowserRouter([
@@ -47,7 +50,11 @@ let rout=createBrowserRouter([
     path:'/about',
     element:<About/>
   }
-])
+,
+{
+  path:'/Admin',
+  element:<Add_Hotel/>
+}])
 
 
 root.render(

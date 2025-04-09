@@ -20,18 +20,28 @@ export default function Header({name}) {
       console.log('No results found');
     }
   };
+  const logout=()=>
+  {
+    localStorage.removeItem("username");
+  localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("fullName")
+  navigate("/login");
+  }
 
   return (
     <div>
       <div className="header-container">
+
         <div className={showmenu ? 'sidemenu' : 'sidemenu1'}>
           <div>
             <ul className='sidelink'>
-              <h1>{name1}</h1>
+            <h2>Welcome, {localStorage.getItem("fullName")}</h2>
+
               <li><Link to={'/Contactus'}>Contact-us</Link></li>
               <li><Link to={'/about'}>About-us</Link></li>
               <li><Link to={'/Login'}>Login</Link></li>
               <li><Link to={'/Signup'}>Sign up</Link></li>
+              <li><button onClick={logout}>Logout</button></li>
             </ul>
           </div>
         </div>
